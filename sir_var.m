@@ -6,13 +6,13 @@ n = [4, 3, 2];
 
 for i = 1:3
     for j = 1:3
-        q(i,j) = sqrt(3 * k(i));
+        q(i,j) = sqrt(3 * k(i)); % Stored as matrix only to display later :!
         sir(i, j) = 1/ ((2 * (q(i, j) + 1))^(-n(j)) +
                         (2 * (q(i, j))^(-n(j))) + 
                         (2 * (q(i, j) - 1)^(-n(j))));
         sir_db(i, j) = 10*log10(sir(i, j));
-    endfor
-endfor
+    end
+end
 
 disp("Q:"); disp(q);
 disp("S/I:"); disp(sir);

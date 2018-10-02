@@ -14,8 +14,8 @@ s_i_ratio = 1/((2 * (reuse_ratio + 1)^(-4) +
                 2 * (reuse_ratio)^(-4) +
                 2 * (reuse_ratio - 1)^(-4)));
 
-fprintf("S/N ratio is %.3f\n", s_i_ratio);
+fprintf("S/I ratio is %.3f\n", s_i_ratio);
 
 s_i_db = int8(10*log10(s_i_ratio));
 
-fprintf("S/N(dB) is %d\n", s_i_db);
+fprintf("S/I(dB) is %d\n", s_i_db);

@@ -41,6 +41,6 @@ subplot(4, 1, 3)
 stem(tx)
 title("Encoded DSSS Transmitter sequence")
 subplot(4, 1, 4)
-stem(b)
+stem(rx)
 title("Decoded DSSS Receiver sequece")
 
